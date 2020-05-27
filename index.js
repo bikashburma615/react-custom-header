@@ -10,7 +10,7 @@ const Header = props => {
                 <img alt="Leapfrog Technology" />
               </a>
             </div>
-            <ul className={classnames('header__nav', { show: true })}>
+            <ul>
               <li className="header__nav-item">
                 <a className="header__nav-item-link">
                   Projects
