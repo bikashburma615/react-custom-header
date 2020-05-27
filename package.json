@@ -17,7 +17,7 @@
   ],
   "author": "Bikash Burma <bikasburma50@gmail.com>",
   "license": "ISC",
-  "peerDependencies": {
+  "dependencies": {
     "react": "^16.13.1"
   }
 }
