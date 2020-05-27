@@ -69,76 +69,37 @@ export default (wrapped, events) => class Wrapper extends React.PureComponent {
     }
 }
 
-export default Header = props => {
-    const [isUserMenuShown, setIsUserMenuShown] = useState(false);
-    const [isMenuShown, setIsMenuShown] = useState(false);
-  
-    const toggleMenu = param => {
-      if (param === 'user') {
-        setIsUserMenuShown(!isUserMenuShown);
-      } else {
-        setIsMenuShown(!isMenuShown);
-      }
-    };
-  
-    const { user } = props;
-  
+export default Header = props => {  
     return (
       <header className="header">
         <div className="container header__container">
           <div className="header__left">
             <div className="logo">
               <a href="/" title="Leapfrog Technology">
-                <img src={logoFull} alt="Leapfrog Technology" />
+                <img alt="Leapfrog Technology" />
               </a>
             </div>
-            <ul className={classnames('header__nav', { show: isMenuShown })}>
+            <ul className={classnames('header__nav', { show: true })}>
               <li className="header__nav-item">
-                <a href={config.uri.vyaguta.projects} className="header__nav-item-link">
+                <a className="header__nav-item-link">
                   Projects
                 </a>
               </li>
               <li className="header__nav-item">
-                <a href={config.uri.vyaguta.timesheet} className="header__nav-item-link">
+                <a className="header__nav-item-link">
                   Timesheet
                 </a>
               </li>
               <li className="header__nav-item">
-                <a href={config.uri.vyaguta.leave} className="header__nav-item-link">
+                <a className="header__nav-item-link">
                   Leave
                 </a>
               </li>
               <li className="header__nav-item">
                 <a
-                  href={config.uri.vyaguta.rnr}
                   className="header__nav-item-link header__nav-item-link--active"
                 >
                   R&R
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div className="header__right">
-            <div className="header__right-profile" onClick={() => toggleMenu('user')}>
-              <UserProfile
-                profileImage={user.avatarUrl}
-                profileName={`${user.firstName || ''} ${user.lastName || ''}`}
-              />
-              <FiChevronDown className="dropdown-icon" size="18px" />
-            </div>
-            <ul className={classnames('dropmenu', { show: isUserMenuShown })}>
-              <li className="dropmenu__node">
-                <a href={getUserProfileUrl(user)} title={user.name} className="dropmenu__node-link">
-                  View Profile
-                </a>
-              </li>
-              <li className="dropmenu__node">
-                <a
-                  href={`${config.authURI}${config.lmsEndpoints.auth.logout}`}
-                  title="Logout"
-                  className="dropmenu__node-link"
-                >
-                  Log Out
                 </a>
               </li>
             </ul>
@@ -147,4 +108,3 @@ export default Header = props => {
       </header>
     );
   };
-  
