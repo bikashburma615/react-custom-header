@@ -2,7 +2,7 @@ import React from 'react';
 
 const Header = props => {  
     return (
-      <header className="header">
+      <div className="header">
         <div className="container header__container">
           <div className="header__left">
             <div className="logo">
@@ -36,7 +36,7 @@ const Header = props => {
             </ul>
           </div>
         </div>
-      </header>
+      </div>
     );
   };
 
