@@ -1,24 +1,23 @@
 {
-    "name": "react-custom-header",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "repository": {
-      "type": "git",
-      "url": "git@github.com:bikashburma615/react-custom-header.git"
-    },
-    "keywords": [
-      "react",
-      "custom-components",
-      "web-components"
-    ],
-    "author": "Bikash Burma <bikasburma50@gmail.com>",
-    "license": "ISC",
-    "peerDependencies": {
-      "react": "^16.8.3"
-    }
-  }
-  
+  "name": "react-custom-header",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:bikashburma615/react-custom-header.git"
+  },
+  "keywords": [
+    "react",
+    "custom-components",
+    "web-components"
+  ],
+  "author": "Bikash Burma <bikasburma50@gmail.com>",
+  "license": "ISC",
+  // "peerDependencies": {
+  //   "react": "^16.8.3"
+  // }
+}
