@@ -1,7 +1,6 @@
 import React from 'react';
 
 const Header = props => {  
-    return (
       <div className="header">
         <div className="container header__container">
           <div className="header__left">
@@ -37,7 +36,6 @@ const Header = props => {
           </div>
         </div>
       </div>
-    );
   };
 
   export default Header;
