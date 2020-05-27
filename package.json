@@ -16,8 +16,8 @@
     "web-components"
   ],
   "author": "Bikash Burma <bikasburma50@gmail.com>",
-  "license": "ISC"
-  // "peerDependencies": {
-  //   "react": "^16.8.3"
-  // }
+  "license": "ISC",
+  "peerDependencies": {
+    "react": "^16.8.3"
+  }
 }
