@@ -1,3 +1,5 @@
+import styles from './styles'
+
 const ACTION_PERFORMED = {
   STARTED: 'started',
   STOPPED: 'stopped',
@@ -7,3 +9,4 @@ const ACTION_PERFORMED = {
 };
 
 export  default ACTION_PERFORMED;
+export const styles;
