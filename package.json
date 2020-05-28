@@ -2,7 +2,7 @@
   "name": "react-custom-header",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/main.js",
   "files": [
     "sass"
   ],
@@ -20,7 +20,12 @@
   ],
   "author": "Bikash Burma <bikasburma50@gmail.com>",
   "license": "ISC",
-  "dependencies": {
-    "react": "^16.13.1"
+  "dependencies": {},
+  "devDependencies": {
+    "react": "^16.13.1",
+    "rollup": "^2.11.2",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0"
   }
 }
